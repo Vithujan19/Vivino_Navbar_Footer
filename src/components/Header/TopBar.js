@@ -136,7 +136,7 @@ function TopBar() {
         <button className="navbar-toggler" type="button" onClick={() => onClickDropDown()} aria-controls="main-dropdown-collapse" aria-expanded={show}>
           <div className={show ? 'hamburger-menu-icon open' : 'hamburger-menu-icon'}><span></span><span></span><span></span></div>
         </button>
-        <a className="navbar-brand col-lg-3" href="#" style={{ fontSize: 24, fontWeight: 600, color: "red" }}>
+        <a className="navbar-brand col-lg-3" href="#" style={{ fontSize: 30, fontWeight: 700, color: "#BA1628" }}>
           VIVINO
             </a>
         <div className="form-group has-search col-lg-6" >
