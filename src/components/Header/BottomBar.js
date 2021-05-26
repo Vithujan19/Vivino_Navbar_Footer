@@ -64,7 +64,7 @@ function BottomBar() {
               <li className="nk-menu-item">
                 <Link href="#">Regions</Link>
                 <div>
-                    <h1>hellow rold</h1>
+                    <h5>hellow rold</h5>
                 </div>
               </li>
               <li className="nk-menu-item">

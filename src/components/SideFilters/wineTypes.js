@@ -3,7 +3,7 @@ import { Grid, Button, Typography } from "@material-ui/core";
 
 function WineType() {
   return (
-    <Grid container direction="column" spacing={2}>
+    <Grid container direction="column" spacing={0}>
       <Grid item>
         <Grid container direction="row">
           <Grid
@@ -59,8 +59,11 @@ function WineType() {
         </Grid>
       </Grid>
       <Grid item>
-        <Grid container direction="row"  spacing={2}>
-          <Grid item xl={4} lg={4} md={4} sm={4} xs={4}>
+        <Grid container direction="row"  spacing={3}  style={{
+                padding: "0px 0px 15px 0px",
+                
+              }}>
+          <Grid item xl={4} lg={4} md={4} sm={4} xs={4} >
           <button
               style={{
                 padding: "2px 25px 2px 25px",
@@ -68,10 +71,10 @@ function WineType() {
                 fontWeight: 400,
                 border: " 1px solid #BA1628",
                 color: "#BA1628",
-                backgroundColor: "#0000",
+                backgroundColor: "white",
                 borderRadius: 25,
                 height: 35,
-                width: 130,
+                width: 120,
               }}
             >
               Red
@@ -85,10 +88,10 @@ function WineType() {
                 fontWeight: 400,
                 border: " 1px solid #BA1628",
                 color: "#BA1628",
-                backgroundColor: "#0000",
+                backgroundColor: "white",
                 borderRadius: 25,
                 height: 35,
-                width: 130,
+                width: 120,
               }}
             >
               White
@@ -102,10 +105,10 @@ function WineType() {
                 fontWeight: 400,
                 border: " 1px solid #BA1628",
                 color: "#BA1628",
-                backgroundColor: "#0000",
+                backgroundColor: "white",
                 borderRadius: 25,
                 height: 35,
-                width: 130,
+                width: 120,
               }}
             >
               Sparking
@@ -114,7 +117,7 @@ function WineType() {
         </Grid>
       </Grid>
       <Grid item>
-        <Grid container direction="row"  spacing={2}>
+        <Grid container direction="row"  spacing={3}>
           <Grid item xl={4} lg={4} md={4} sm={4} xs={4}>
           <button
               style={{
@@ -123,13 +126,13 @@ function WineType() {
                 fontWeight: 400,
                 border: " 1px solid #BA1628",
                 color: "#BA1628",
-                backgroundColor: "#0000",
+                backgroundColor: "white",
                 borderRadius: 25,
                 height: 35,
-                width: 130,
+                width: 120,
               }}
             >
-              Red
+              Rose
             </button>
           </Grid>
           <Grid item xl={4} lg={4} md={4} sm={4} xs={4}>
@@ -140,13 +143,13 @@ function WineType() {
                 fontWeight: 400,
                 border: " 1px solid #BA1628",
                 color: "#BA1628",
-                backgroundColor: "#0000",
+                backgroundColor: "white",
                 borderRadius: 25,
                 height: 35,
-                width: 130,
+                width: 120,
               }}
             >
-              White
+              Desert
             </button>
           </Grid>
           <Grid item xl={4} lg={4} md={4} sm={4} xs={4}>
@@ -157,13 +160,13 @@ function WineType() {
                 fontWeight: 400,
                 border: " 1px solid #BA1628",
                 color: "#BA1628",
-                backgroundColor: "#0000",
+                backgroundColor: "white",
                 borderRadius: 25,
                 height: 35,
-                width: 130,
+                width: 120,
               }}
             >
-              Sparking
+              Fortified
             </button>
           </Grid>
         </Grid>

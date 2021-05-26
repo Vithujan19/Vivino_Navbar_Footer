@@ -10,12 +10,13 @@ function WineType() {
       setValue(newValue);
     };
   return (
-    <Grid container direction="column" spacing={2}>
+    <Grid container direction="column" spacing={2}   >
       <Grid item>
       <Typography
               variant="caption"
               display="block"
               gutterBottom
+             
               style={{
                 fontSize: 20,
                 fontWeight: 700,
@@ -29,12 +30,14 @@ function WineType() {
       <Grid item>
         <Grid container direction="row"   justify="center"
   alignItems="center"  spacing={2}>
+      {valuetext}
         <Slider
         value={value}
         onChange={handleChange}
         valueLabelDisplay="auto"
         aria-labelledby="range-slider"
         getAriaValueText={valuetext}
+        
         style={{
             fontSize: 20,
             fontWeight: 700,

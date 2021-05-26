@@ -31,12 +31,62 @@ function Card() {
       icon: 1,
       review:"Among top 3% of all wines in the world",
 
+    },
+    {
+      img: "https://images.vivino.com/thumbs/9gx-TV5tTOivI0OUtcnO1w_pb_x600.png",
+      name: "Vindana",
+      title:
+        "Keeper of the Stones Shiraz 2015",
+      address: " Red wine from Barossa Valley · Australia",
+      rating:4.5,
+      ratingCount: 25,
+      amount:79.17,
+      icon: 1,
+      review:"Among top 3% of all wines in the world",
+
+    },
+    {
+      img: "https://images.vivino.com/thumbs/DgA7-IECSF6gx7yxipE6JQ_pb_x600.png",
+      name: "Taylors / Wakefield",
+      title: " St. Andrews Shiraz 2017 ",
+      address: " Red wine from Clare Valley· Australia",
+      rating:3.5,
+      ratingCount: 25,
+      amount:66.17,
+      icon: 1,
+      review:"Among top 3% of all wines in the world",
+
+    },{
+      img: "https://images.vivino.com/thumbs/9gx-TV5tTOivI0OUtcnO1w_pb_x600.png",
+      name: "Vindana",
+      title:
+        "Keeper of the Stones Shiraz 2015",
+      address: " Red wine from Barossa Valley · Australia",
+      rating:4.5,
+      ratingCount: 25,
+      amount:79.17,
+      icon: 1,
+      review:"Among top 3% of all wines in the world",
+
+    },
+    {
+      img: "https://images.vivino.com/thumbs/DgA7-IECSF6gx7yxipE6JQ_pb_x600.png",
+      name: "Taylors / Wakefield",
+      title: " St. Andrews Shiraz 2017 ",
+      address: " Red wine from Clare Valley· Australia",
+      rating:3.5,
+      ratingCount: 25,
+      amount:66.17,
+      icon: 1,
+      review:"Among top 3% of all wines in the world",
+
     },]
   return (
     <Grid container >
     {Vines.map((v) => (
-    <Paper elevation={0} style={{margin:10,padding:10}}>
+    <Paper elevation={0} style={{margin:10,padding:10,borderRadius: 5,boxShadow: "1px 1px 5px 1px #e3d9d8"}}>
       <Grid container direction="row">
+        
         <Grid
           container
           item
