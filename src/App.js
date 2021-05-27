@@ -30,7 +30,7 @@ function App() {
         {/* <TopBar /> */}
         <NavBar />
         {/* <SecondBar /> */}
-        <Grid container direction="row" spacing={0} style={{ paddingLeft: 60,paddingRight:60 }}>
+        <Grid container direction="row" spacing={0} style={{  }}>
         <Hidden smDown>
           <Grid
             item
@@ -47,7 +47,9 @@ function App() {
             
           </Grid></Hidden>
           <Grid item xl={2} lg={2} md={2} sm={12} xs={12}>
-            
+          <br/><br/>
+            <Sort/>
+            <br/><br/>
           </Grid>
         </Grid>
         <Grid container direction="row" spacing={0} style={{ paddingLeft: 80,paddingRight:40 }}>
