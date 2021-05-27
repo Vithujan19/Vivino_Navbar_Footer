@@ -77,7 +77,7 @@ function WineType() {
       <Grid item> <Grid
           container
           direction="row"
-          spacing={2}
+          spacing={1}
           
         >
       {Ratings.map((r) => (   

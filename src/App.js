@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import TopBar from "./components/Header/TopBar";
+import NavBar from "./components/Header/navBar";
+
 import SecondBar from "./components/Header/BottomBar";
 import TopFooter from "./components/Footer/top-footer/TopFooterComponent";
 import SecondFooter from "./components/Footer/second-footer/SecondFooterComponent";
@@ -17,17 +19,39 @@ import Regions from "./components/SideFilters/Regions";
 import Countries from "./components/SideFilters/contries";
 import WineStyles from "./components/SideFilters/wineStyles";
 import FoodPairings from "./components/SideFilters/foodPairings";
-
-import { Grid } from "@material-ui/core";
+import Sort from "./components/SortLayout/sort"
+import { Grid, Hidden } from "@material-ui/core";
 import FilterDrawer from "./components/Filters/FilterDrawer";
 
 function App() {
   return (
     <div className="App" style={{ backgroundColor: "#FAFAFA" }}>
       <DropDownProvider>
-        <TopBar />
-        <SecondBar />
-        <Grid container direction="row" spacing={4} style={{ paddingLeft: 60 }}>
+        {/* <TopBar /> */}
+        <NavBar />
+        {/* <SecondBar /> */}
+        <Grid container direction="row" spacing={0} style={{ paddingLeft: 60,paddingRight:60 }}>
+        <Hidden smDown>
+          <Grid
+            item
+            container
+            xl={10}
+            lg={10}
+            md={10}
+            sm={12}
+            xs={12}
+            direction="column"
+            style={{ background: "" }}
+            spacing={7}
+          >
+            
+          </Grid></Hidden>
+          <Grid item xl={2} lg={2} md={2} sm={12} xs={12}>
+            
+          </Grid>
+        </Grid>
+        <Grid container direction="row" spacing={0} style={{ paddingLeft: 80,paddingRight:40 }}>
+        <Hidden smDown>
           <Grid
             item
             container
@@ -38,41 +62,41 @@ function App() {
             xs={12}
             direction="column"
             style={{ background: "" }}
-            spacing={4}
+            spacing={0}
           >
-            <Grid item>
+            <Grid item  >
               <SideFilter />
             </Grid>
+            <br/><br/>
             <Grid item>
               <PriceRange />
-            </Grid>
+            </Grid><br/><br/>
             <Grid item>
               <UserRating />
-            </Grid>
+            </Grid><br/><br/>
             <Grid item>
               <Grapes />
-            </Grid>
+            </Grid><br/><br/>
             <Grid item>
               {" "}
               <Regions />
-            </Grid>
+            </Grid><br/><br/>
             <Grid item>
               {" "}
               <Countries />
-            </Grid>
+            </Grid><br/><br/>
             <Grid item>
               {" "}
               <WineStyles />
-            </Grid>
+            </Grid><br/><br/>
             <Grid item>
               {" "}
               <FoodPairings />
-            </Grid>
-          </Grid>
-          <Grid item xl={7} lg={7} md={7} sm={12} xs={12}>
+            </Grid><br/><br/>
+          </Grid></Hidden>
+          <Grid     item xl={8} lg={8} md={8} sm={12} xs={12} >
             <Wine />
           </Grid>
-          <Grid item xl={1} lg={1} md={1} sm={false} xs={false}></Grid>
         </Grid>
 
         <TopFooter />

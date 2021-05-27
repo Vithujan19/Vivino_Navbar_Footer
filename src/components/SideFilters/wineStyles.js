@@ -60,7 +60,7 @@ function WineType() {
           }}></span>
             <InputBase
       
-        placeholder="Search grapes"
+        placeholder="Search wine styles"
         inputProps={{ 'aria-label': 'naked' }}
         style={{
             fontSize: 14,
@@ -77,7 +77,7 @@ function WineType() {
       <Grid item> <Grid
           container
           direction="row"
-          spacing={2}
+          spacing={1}
           
         >
       {Ratings.map((r) => (   

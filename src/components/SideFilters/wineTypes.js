@@ -59,7 +59,7 @@ function WineType() {
         </Grid>
       </Grid>
       <Grid item>
-        <Grid container direction="row"  spacing={3}  style={{
+        <Grid container direction="row"  spacing={1}  style={{
                 padding: "0px 0px 15px 0px",
                 
               }}>
@@ -117,7 +117,7 @@ function WineType() {
         </Grid>
       </Grid>
       <Grid item>
-        <Grid container direction="row"  spacing={3}>
+        <Grid container direction="row"  spacing={1}>
           <Grid item xl={4} lg={4} md={4} sm={4} xs={4}>
           <button
               style={{

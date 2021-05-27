@@ -56,11 +56,11 @@ function WineType() {
           style={{
             fontSize: 20,
             fontWeight: 700,
-            padding: "0px 0px 0px 32px",
+            padding: "0px 0px 0px 38px",
             color: "black",
           }}
         >
-          
+     
      
          
           <input type="radio" checked={r.number} name="radio"
@@ -75,7 +75,7 @@ function WineType() {
                 readOnly
                 style={{
                   padding: "0px 0px 0px 0px",
-                  margin: "0px 0px 0px -20px",
+                  margin: "0px 0px 0px -30px",
                   color: "#A61A30",
                   fontSize:16
                 }}
